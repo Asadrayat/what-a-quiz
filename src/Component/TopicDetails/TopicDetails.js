@@ -9,7 +9,7 @@ const TopicDetails = () => {
     return (
         <div className='flex flex-col items-center'>
             <p className='my-12 text-2xl text-indigo-600'>Total Quiz :{total}</p>
-            <div className=''>
+            <div className='grid grid-cols-2 border'>
             {
                 questions.map(quest => <Quiz
                  key={quest.id}
