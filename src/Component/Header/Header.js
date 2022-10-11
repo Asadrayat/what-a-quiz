@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='container mx-auto mt-4 '>
-            <nav className='flex justify-between px-12 py-6  bg-indigo-600 '>
+            <nav className='flex justify-between px-12 py-6 border rounded-lg  bg-indigo-600 '>
                 <div>
                     <p className="font-bold	text-4xl text-white">What A Quiz!</p>
                 </div>
