@@ -6,7 +6,6 @@ import Statistic from './Component/Statistic/Statistic';
 import Home from './Component/Home/Home';
 import Error from './Component/Error/Error';
 import TopicDetails from './Component/TopicDetails/TopicDetails';
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -37,7 +36,8 @@ function App() {
         {
           path : "/statistic",
           element : <Statistic></Statistic>,
-        },
+        }
+       
       ]
     },
   ]);
