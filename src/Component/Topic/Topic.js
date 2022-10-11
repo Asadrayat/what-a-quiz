@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    const { name, logo } = topic;
+    const { name, logo ,id} = topic;
     return (
         <div>
 
@@ -9,7 +10,7 @@ const Topic = ({ topic }) => {
                 <img src={logo} alt="" />
                 <div className='flex justify-between pt-16 '>
                     <p className='text-2xl px-12  font-bold text-white'>{name}</p>
-                    <button className='bg-green-600  hover:bg-green-400  px-12 py-4 text-2xl border rounded-br-2xl rounded=tl border-blue-900 text-white  '>Start Quiz</button>
+                    <button className='bg-green-600  hover:bg-green-400  px-12 py-4 text-2xl border rounded-br-2xl rounded=tl border-blue-900 text-white  '><Link to={`/home/${id}`}>Start Quiz</Link></button>
                 </div>
 
             </div>

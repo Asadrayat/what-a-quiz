@@ -5,6 +5,7 @@ import Root from './Component/Root/Root';
 import Statistic from './Component/Statistic/Statistic';
 import Home from './Component/Home/Home';
 import Error from './Component/Error/Error';
+import TopicDetails from './Component/TopicDetails/TopicDetails';
 
 function App() {
   const router = createBrowserRouter([
@@ -21,6 +22,13 @@ function App() {
         {
           path : "/home",
           element : <Home></Home>,
+        },
+        {
+          path : "/home/:homeId",
+          loader : async({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.homeId}`)
+          } ,
+          element : <TopicDetails></TopicDetails>,
         },
         {
           path : "/blog",
