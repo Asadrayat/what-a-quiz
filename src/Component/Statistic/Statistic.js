@@ -5,27 +5,27 @@ const Statistic = () => {
     const data = [
         {
             name: "React",
-            uv: 4000,
-            pv: 2400,
-            amt: 2400
+            
+            pv: 8,
+            amt: 8
         },
         {
             name: "Java script",
-            uv: 3000,
-            pv: 1398,
-            amt: 2210
+            
+            pv: 9,
+            amt: 9
         },
         {
             name: "CSS",
-            uv: 2000,
-            pv: 9800,
-            amt: 2290
+            
+            pv: 8,
+            amt: 8
         },
         {
             name: "Git",
-            uv: 2780,
-            pv: 3908,
-            amt: 2000
+            
+            pv: 11,
+            amt: 11
         }
     ];
     return (
@@ -46,8 +46,7 @@ const Statistic = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="pv" fill="#8884d8" />
-                <Bar dataKey="uv" fill="#82ca9d" />
+                <Bar dataKey="Quizes" fill="#8884d8" />
             </BarChart>
         </div>
 
